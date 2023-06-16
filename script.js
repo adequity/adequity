@@ -29,7 +29,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-emailjs.init('입력 필요');
+emailjs.init('JntrdSIqQJ0dghGCi');
 
 const btn = document.getElementById('button');
 
@@ -40,7 +40,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         if(document.getElementById('privacy').checked){
             btn.value = '보내는 중...';
             const serviceID = 'default_service';
-            const templateID = '입력 필요';
+            const templateID = 'template_o1xjabw';
 
             emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
